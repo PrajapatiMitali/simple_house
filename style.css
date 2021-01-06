@@ -22,7 +22,7 @@ body {
 header {
   width: 100%;
   height: 64vh;
-  background: url("../images/simple-house-01.jpg") no-repeat top center scroll;
+  background: url("./images/simple-house-01.jpg") no-repeat top center scroll;
   background-size: cover;
   background-position: center 75%;
   background-attachment: fixed;

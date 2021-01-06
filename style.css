@@ -252,7 +252,7 @@ footer p {
 
 .parallax-section {
   height: 30vh;
-  background: url("../images/about-05.jpg") no-repeat;
+  background: url("./images/about-05.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

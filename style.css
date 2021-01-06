@@ -1,0 +1,486 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html {
+  font-size: 75%;
+  font-family: sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+header {
+  width: 100%;
+  height: 64vh;
+  background: url("../images/simple-house-01.jpg") no-repeat top center scroll;
+  background-size: cover;
+  background-position: center 75%;
+  background-attachment: fixed;
+  margin-bottom: -15rem;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+.nav-logo img {
+  width: 5rem;
+}
+
+.nav-text h1 {
+  font-size: 3.5rem;
+  font-weight: lighter;
+}
+
+.nav-text p {
+  font-size: 1.6rem;
+}
+
+.nav-list {
+  display: flex;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  opacity: 0.5;
+}
+.nav-text h1,
+a {
+  color: white;
+}
+.nav-text h1 {
+  font-size: 3rem;
+}
+.nav-item {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+/* .nav-item:nth-child(1) {
+  border-bottom: 1px solid #fff;
+} */
+.nav-link:hover {
+  border-bottom: 1px solid #fff;
+}
+.hero-section {
+  width: 100%;
+  height: 45vh;
+  text-align: center;
+  margin-top: 7rem;
+}
+.hero-section h1 {
+  margin: 0rem 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.hero-section p {
+  margin: 1rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.image-gallery {
+  width: 100%;
+}
+.image-gallery ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem 0 6rem;
+}
+.image-gallery li {
+  margin: 1rem;
+  font-size: 1.7rem;
+  color: rgb(31, 100, 31);
+  transition: all 650ms ease;
+}
+.list {
+  border: 1px solid rgb(31, 100, 31);
+  padding: 1rem;
+}
+.image-gallery ul li.active {
+  background: rgb(31, 100, 31);
+  color: white;
+}
+.image-gallery ul li:hover {
+  background: rgb(31, 100, 31);
+  color: white;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 3rem;
+}
+.gallery-grid .gallery-grid-item {
+  opacity: 0.89;
+}
+.gallery-grid-item {
+  padding: 1rem 0rem;
+}
+.gallery-grid-item {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+}
+.gallery-grid-item:hover {
+  transform: scale(1.1);
+  /* opacity: 0.9; */
+  filter: blur(0px);
+  opacity: 1;
+  transition: all 650ms ease;
+}
+/* .gallery-grid-item:hover:not(:first-child) {
+  opacity: 0.9;
+} */
+.gallery-grid-item h1 {
+  font-size: 2rem;
+  color: rgb(31, 100, 31);
+}
+.gallery-grid-item:hover {
+  color: rgb(195, 0, 255);
+}
+.gallery-grid-item p {
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+}
+.gallery-grid-item span {
+  font-size: 1.5rem;
+  color: rgb(92, 92, 226);
+  line-height: 2rem;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 1rem 2rem;
+}
+.content .content-image img {
+  width: 100%;
+  height: 35vh;
+}
+.content .content-text h1 {
+  font-size: 2rem;
+  color: rgb(119, 54, 128);
+  margin-top: 1rem;
+}
+.content .content-text p {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin: 2rem 0rem;
+}
+
+.content .content-text .btn {
+  font-size: 1.5rem;
+  border: 1px solid rgb(31, 100, 31);
+  color: rgb(31, 100, 31);
+  margin: 1rem 7rem;
+  padding: 0.7rem;
+}
+.content .content-text .btn:hover {
+  color: white;
+  background-color: rgb(31, 100, 31);
+  transition: all 650ms ease;
+}
+footer {
+  margin-top: 2rem;
+}
+footer p {
+  margin: 1rem 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+}
+.grid-about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  /* grid-gap: 8rem; */
+}
+.grid-about-item {
+  display: flex;
+  flex-direction: column;
+}
+.grid-about-item img {
+  width: 15rem;
+  height: 40vh;
+  margin-top: -2rem;
+  object-fit: cover;
+}
+.about-profile {
+  width: 50%;
+  height: 35vh;
+}
+.about-profile h1 {
+  font-size: 2rem;
+  color: rgb(119, 54, 128);
+}
+.about-profile span {
+  font-size: 1.5rem;
+  color: rgb(92, 92, 226);
+  line-height: 2rem;
+}
+.about-profile p {
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  margin-top: 1rem;
+}
+
+.parallax-section {
+  height: 30vh;
+  background: url("../images/about-05.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 5rem;
+}
+.main .main-text p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-top: 1rem;
+}
+.main .main-text .b-btn {
+  background-color: rgb(55, 55, 233);
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+  float: right;
+  margin-top: 1rem;
+}
+.main .main-text .b-btn:hover {
+  background-color: rgb(27, 27, 235);
+}
+.main .main-text .r-btn {
+  background-color: rgb(212, 37, 37);
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+  float: right;
+  margin-top: 1rem;
+}
+.main .main-text .r-btn:hover {
+  background-color: rgb(236, 16, 16);
+}
+.main .main-text .g-btn {
+  background-color: rgb(54, 168, 54);
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+  float: right;
+  margin-top: 1rem;
+}
+.main .main-text .g-btn:hover {
+  background-color: rgb(32, 219, 32);
+}
+
+.history {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fix, minmax(25rem, 1fr));
+  grid-gap: 5rem;
+}
+.history {
+  /* display: flex;
+  flex-direction: row; */
+  display: grid;
+  grid-template-rows: 1fr;
+}
+.history img {
+  width: 100%;
+  height: 35vh;
+}
+.history .history-text h1 {
+  font-size: 2rem;
+  color: rgb(119, 54, 128);
+}
+.history .history-text p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-top: 1rem;
+}
+.last {
+  background-color: rgb(117, 114, 114);
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .cform {
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+}
+.submit {
+  width: 10rem;
+  height: auto;
+  font-size: 1.5rem;
+  background-color: rgb(117, 114, 114);
+  color: rgb(255, 255, 255);
+  border: 2px solid white;
+  margin: 1rem 10rem;
+  padding: 0.7rem;
+  text-align: center;
+}
+.submit:hover {
+  background-color: rgb(68, 66, 66);
+}
+.contact-form h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+.contact-text {
+  margin: 5rem;
+}
+.contact-text h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  color: rgb(80, 68, 189);
+}
+.contact-text p {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+.contact-text h2 {
+  color: rgb(80, 68, 189);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* media query */
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 70%;
+  }
+
+  /* nav for desktop */
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav-list .nav-item a {
+    font-size: 2rem;
+  }
+  header {
+    margin-bottom: -10rem;
+  }
+  .image-gallery {
+    margin-top: -10rem;
+  }
+
+  .hero-section {
+    margin-top: 5rem;
+  }
+  .gallery-grid-item h1 {
+    font-size: 2.2rem;
+  }
+  .gallery-grid-item p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  .gallery-grid-item span {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+  }
+
+  /* for desktop */
+  .content {
+    margin-top: 8rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content .content-text {
+    margin-left: 4rem;
+  }
+  .content .content-text .btn {
+    float: right;
+  }
+  footer {
+    margin-top: 3rem;
+  }
+  .grid-about {
+    grid-gap: 8rem;
+    margin-top: -7rem;
+  }
+  .grid-about-item {
+    flex-direction: row;
+  }
+  .about-profile {
+    margin: -1rem 2rem 0rem 2rem;
+  }
+  .about-profile h1 {
+    font-size: 2.2rem;
+  }
+  .about-profile span {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+  }
+  .about-profile p {
+    margin-top: 4rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  .main .main-text {
+    margin: 4rem;
+    text-align: center;
+  }
+  .main .main-text .btn {
+    margin: 4rem 8rem;
+  }
+  .history {
+    display: flex;
+  }
+  .history-text p {
+    font-size: 3rem;
+  }
+  .last {
+    width: 50%;
+    margin: auto;
+    height: 80vh;
+  }
+  .submit {
+    margin: 2rem 25rem;
+  }
+  .map {
+    background-color: rgb(119, 115, 115);
+    width: 51.3%;
+    margin: auto;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
